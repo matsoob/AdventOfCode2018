@@ -33,5 +33,6 @@ public class Day2 {
 		}
 		Day2Solution sol = new Day2Solution(inputs);
 		System.out.println(sol.getCheckSum());
+		System.out.println(sol.getPair());
 	}
 }
