@@ -7,9 +7,6 @@ import java.util.ListIterator;
 public class Day5Solution {
 	
 	String original;
-	LinkedList<Character> originalList = new LinkedList<>();
-	
-	
 	final int alphaConstant = 'a' - 'A';
 
 	public Day5Solution(String target){
@@ -50,7 +47,6 @@ public class Day5Solution {
 	public int compareShortest(){
 		
 		int shortest = Integer.MAX_VALUE;
-		
 		for (char alph = 'A'; alph < 'Z'; alph++){
 			LinkedList<Character> list = new LinkedList<>();
 			for (int i=0 ; i < original.length(); i++) {
@@ -63,9 +59,7 @@ public class Day5Solution {
 				shortest = length;
 			}
 		}
-		
 		return shortest;
-	
 	}
 
 	
