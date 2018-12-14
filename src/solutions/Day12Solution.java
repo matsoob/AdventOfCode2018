@@ -8,7 +8,8 @@ public class Day12Solution {
 	TrieNode root;
 
 	public Day12Solution(String initialLayout, ArrayList<String> inputs) {
-		
+		String[] split = initialLayout.split(":");
+		initialLayout = split[1].trim();
 		int totalLength = initialLayout.length() + (20*5) + (20*5);
 		pots = new char[totalLength];
 		int curr = 20*5 - 1;

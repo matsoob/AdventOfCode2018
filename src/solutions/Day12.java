@@ -15,8 +15,8 @@ public class Day12 {
 			inputs.add(input);
 		}
 		Day12Solution sol = new Day12Solution(initialLayout, inputs);
-		
-
+		System.out.println("Plants after 20 iterations are " + sol.runTimes(20));
+		System.out.println("Total pots are " + sol.count());
 	}
 
 }

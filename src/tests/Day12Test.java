@@ -13,7 +13,7 @@ public class Day12Test {
 	
 	@Test
 	public void test(){
-		String test = "#..#.#..##......###...###";
+		String test = "initial state: #..#.#..##......###...###";
 		String[] arr = {"...## => #",
 				"..#.. => #",
 				".#... => #",
