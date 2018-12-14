@@ -15,6 +15,7 @@ public class Day10 {
 		
 		Day10Solution sol = new Day10Solution(inputs);
 		sol.runUntilMinArea();
+		System.out.println("Current count is " + sol.seconds);
 
 	}
 

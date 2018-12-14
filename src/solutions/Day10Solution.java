@@ -3,6 +3,7 @@ package solutions;
 import java.util.ArrayList;
 
 public class Day10Solution {
+	long seconds = 0;
 	ArrayList<Point> list = new ArrayList<Point>();
 	public int xMax = Integer.MIN_VALUE;
 	public int xMin = Integer.MAX_VALUE;
@@ -85,7 +86,7 @@ public class Day10Solution {
 	}
 	
 	public void passTime() {
-		
+		seconds++;
 		System.out.println("Incrementing once");
 		
 		xMax = Integer.MIN_VALUE;
@@ -111,7 +112,7 @@ public class Day10Solution {
 	} 
 	
 	public void rewindTime() {
-		
+		seconds--;
 		xMax = Integer.MIN_VALUE;
 		xMin = Integer.MAX_VALUE;
 		yMax = Integer.MIN_VALUE;
